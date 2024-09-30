@@ -1,39 +1,15 @@
-# my-project
+# Vue + Froala + Wiris 
 
-This template should help get you started developing with Vue 3 in Vite.
+I followed these setup guides: 
 
-## Recommended IDE Setup
+* https://froala.com/wysiwyg-editor/docs/framework-plugins/vue-js-3/
+* https://froala.com/blog/editor/tutorials/how-to-integrate-froala-with-vue-3/
+* https://froala.com/wysiwyg-editor/examples/wiris/
+* https://docs.wiris.com/mathtype/en/mathtype-integrations/mathtype-for-html-editors/mathtype-for-froala.html
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+I managed to get Froala to work just fine, however the wiris integration seems to break Froala: 
 
-## Type Support for `.vue` Imports in TS
+![error image](error.png)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Removing the wiris import (`HomeView.vue:18 import "@wiris/mathtype-froala3/wiris";`) shows that froala itself is working 
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
