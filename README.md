@@ -11,5 +11,5 @@ I managed to get Froala to work just fine, however the wiris integration seems t
 
 ![error image](error.png)
 
-Removing the wiris import (`HomeView.vue:18 import "@wiris/mathtype-froala3/wiris";`) shows that froala itself is working 
+Removing the wiris import (`HomeView.vue:18 import "@wiris/mathtype-froala/wiris";`) shows that froala itself is working 
 
