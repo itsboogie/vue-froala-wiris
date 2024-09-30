@@ -15,7 +15,7 @@ import { type FroalaOptions } from "froala-editor";
 import "froala-editor/css/froala_editor.pkgd.min.css";
 import "froala-editor/css/froala_style.min.css";
 // the line below breaks the editor
-import "@wiris/mathtype-froala3/wiris";
+import "@wiris/mathtype-froala/wiris";
 
 const config: Partial<FroalaOptions> = {
   // Add MathType and ChemType buttons to the toolbar and the image menu:
